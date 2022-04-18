@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "git@github.com:aibo-cora/SocketRocket-SPM.git",
       "state" : {
-        "branch" : "spm",
-        "revision" : "fe86ec01176ea3365ffa2d04a2bb6dd7a9e6c01e"
+        "revision" : "fe86ec01176ea3365ffa2d04a2bb6dd7a9e6c01e",
+        "version" : "0.6.0"
       }
     }
   ],

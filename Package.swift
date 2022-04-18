@@ -12,14 +12,14 @@ let package = Package(
             targets: ["MQTTClient"]),
     ],
     dependencies: [
-        .package(name: "SocketRocket", url: "git@github.com:aibo-cora/SocketRocket-SPM.git", branch: "spm"),
+        .package(url: "git@github.com:aibo-cora/SocketRocket-SPM.git", exact: "0.6.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MQTTClient",
-            dependencies: ["SocketRocket"],
+            dependencies: [.product(name: "SocketRocket", package: "SocketRocket-SPM")],
             path: "Sources/MQTTClient"),
         .testTarget(
             name: "MQTTClientTests",
