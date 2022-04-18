@@ -20,9 +20,9 @@ let package = Package(
         .target(
             name: "MQTTClient",
             dependencies: [.product(name: "SocketRocket", package: "SocketRocket-SPM")],
-            path: "Sources/MQTTClient",
+            publicHeadersPath: "include",
             cSettings: [
-                .headerSearchPath("Sources/MQTTClient"),
+                .headerSearchPath("."),
             ]),
         .testTarget(
             name: "MQTTClientTests",
