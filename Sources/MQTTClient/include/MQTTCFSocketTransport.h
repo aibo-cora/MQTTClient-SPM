@@ -9,6 +9,7 @@
 #import "MQTTTransport.h"
 #import "MQTTCFSocketDecoder.h"
 #import "MQTTCFSocketEncoder.h"
+// ../MQTTCFSocketTransport.h
 
 /** MQTTCFSocketTransport
  * implements an MQTTTransport on top of CFNetwork
