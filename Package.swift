@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "MQTTClient",
+    name: "Client",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "MQTTClient",
-            targets: ["MQTTClient"]),
+            name: "Client",
+            targets: ["Client"]),
     ],
     dependencies: [
         .package(url: "git@github.com:aibo-cora/SocketRocket-SPM.git", exact: "0.6.0")
@@ -18,7 +18,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
-            name: "MQTTClient",
+            name: "Client",
             dependencies: [.product(name: "SocketRocket", package: "SocketRocket-SPM")],
             path: "Sources/MQTTClient",
             cSettings: [
@@ -26,6 +26,6 @@ let package = Package(
             ]),
         .testTarget(
             name: "MQTTClientTests",
-            dependencies: ["MQTTClient"]),
+            dependencies: ["Client"]),
     ]
 )
