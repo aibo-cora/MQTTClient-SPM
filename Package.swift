@@ -1,4 +1,4 @@
-// swift-tools-version: 5.6
+// swift-tools-version: 5.7
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -19,9 +19,8 @@ let package = Package(
             name: "MQTTClient",
             dependencies: [.product(name: "SocketRocket", package: "SocketRocket")],
             path: "Sources/MQTTClient",
-            cSettings: [
-                
-            ]),
-        .testTarget(name: "MQTTClientTests", dependencies: ["MQTTClient"]),
+            sources: [""],
+            publicHeadersPath: nil
+        )
     ]
 )
