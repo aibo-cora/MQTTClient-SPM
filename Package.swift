@@ -18,9 +18,10 @@ let package = Package(
         .target(
             name: "MQTTClient",
             dependencies: [.product(name: "SocketRocket", package: "SocketRocket")],
-            path: "Sources/MQTTClient",
-            sources: [""],
-            publicHeadersPath: nil
+            path: "MQTTClient",
+            cSettings: [
+                .headerSearchPath("Internal/**"),
+            ]
         )
     ]
 )
