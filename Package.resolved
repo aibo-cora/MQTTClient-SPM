@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "socketrocket-spm",
+      "identity" : "socketrocket",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:aibo-cora/SocketRocket-SPM.git",
+      "location" : "git@github.com:robnadin/SocketRocket.git",
       "state" : {
-        "revision" : "fe86ec01176ea3365ffa2d04a2bb6dd7a9e6c01e",
-        "version" : "0.6.0"
+        "branch" : "spm-support",
+        "revision" : "fe86ec01176ea3365ffa2d04a2bb6dd7a9e6c01e"
       }
     }
   ],
