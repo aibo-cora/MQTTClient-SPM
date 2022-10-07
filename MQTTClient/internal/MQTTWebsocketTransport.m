@@ -12,7 +12,7 @@
 #import <MQTTClient/MQTTWebsocketTransport.h>
 #endif
 
-#import "../MQTTLog.h"
+#import "MQTTLog.h"
 @import SocketRocket;
 
 @interface MQTTWebsocketTransport() <SRWebSocketDelegate>
